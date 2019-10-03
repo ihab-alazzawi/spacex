@@ -7,7 +7,7 @@
     "start": "node server",
     "test": "NODE_ENV= jest",
     "server": "nodemon server.js",
-    "client": "npm start client --prefix ../client",
+    "client": "npm start client --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
@@ -25,7 +25,7 @@
   "devDependencies": {
     "concurrently": "^4.1.2",
     "jest": "^24.9.0",
-    "nodemon": "^1.19.2",
-    "preset": "@shelf/jest-mongodb"
-  }
+    "nodemon": "^1.19.2"
+  },
+  "preset": "@shelf/jest-mongodb"
 }
