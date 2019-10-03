@@ -1,0 +1,134 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.table{
+  overflow-x: auto;
+}
+
+.tbl-header {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 0.5px solid rgba(240, 240, 240, 0.5);
+  border-bottom: none;
+  margin-bottom: -10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+ul {
+  float: right;
+  width: 100%;
+  display: table;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+  width: 120px;
+}
+
+ul li:first-child {
+  display: table-cell;
+  float: left;
+  width: auto;
+}
+
+thead {
+  background-image: linear-gradient(
+    rgb(151, 176, 204),
+    rgba(240, 240, 240, 0.9),
+    #fff
+  );
+}
+
+.tbl-content {
+  height: 100%;
+  margin-top: 0px;
+}
+th {
+  padding: 10px 15px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 17px;
+  color: #002958;
+}
+
+tr {
+  border-radius: 10%;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 15px;
+  color: #5c5c5c;
+  background-color: rgba(240, 240, 240, 0.9);
+  border: solid 1px transparent;
+  border-style: solid none;
+}
+
+table > tbody > tr > td:nth-child(1),
+th:nth-child(1) {
+  width: 50px;
+}
+table > tbody > tr > td:nth-child(2),
+th:nth-child(2) {
+  width: 100px;
+}
+table > tbody > tr > td:nth-child(3),
+th:nth-child(3) {
+  width: 100px;
+}
+table > tbody > tr > td:nth-child(4),
+th:nth-child(4) {
+  width: 100px;
+}
+table > tbody > tr > td:nth-child(5),
+th:nth-child(5) {
+  width: 300px;
+}
+table > tbody > tr > td:nth-child(6),
+th:nth-child(6) {
+  width: 50px;
+}
+table > tbody > tr > td:nth-child(7),
+th:nth-child(7) {
+  width: 50px;
+}
+
+td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spinner{
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  width:50px;
+}
