@@ -1,0 +1,11 @@
+.refresh-btn {
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+
+.refresh-img{
+    border:2px solid #fff;
+    border-radius: 50px;
+    padding: 5px;
+}
